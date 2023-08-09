@@ -1,0 +1,19 @@
+:root {
+    --gold: #DAC0A3;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: clamp(250px, 20%, 350px) 4fr;
+}
+
+.sidebar {
+    background-color: var(--gold);
+}
