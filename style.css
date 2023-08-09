@@ -18,7 +18,8 @@ body {
 .sidebar {
     background-color: var(--gold);
     display: grid;
-    grid-template-rows: 80px 2fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    color: white;
 }
 
 
@@ -28,17 +29,36 @@ body {
     font-weight: bold;
     align-items: center;
     justify-items: flex-start;
-    background-color: red;
-    grid-template-columns: 45px 1fr;
-    padding: 0 10px;
+    grid-template-columns: 0.2fr 1fr;
+    padding-left: 10px;
+    padding-bottom: 30px;
     gap: 8px;
 }
 
 .sidebar .dashboard-icon {
-    width: 45px;
-    color: invert(1);
+    width: 3em;
+    height: auto;
+    filter: invert(100%);
 }
 
 .sidebar .header {
     font-size: 1.8em;
+}
+
+.sidebar .top-list,
+.sidebar .bottom-list {
+    margin-left: 20px;
+}
+
+.sidebar .list-item {
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    grid-template-columns: 30px 1fr;
+}
+
+.sidebar .list-item-img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
 }
