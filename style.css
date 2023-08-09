@@ -1,6 +1,8 @@
 :root {
     --gold: #DAC0A3;
     --slate-700: #334155;
+    --cyan-600: #0f172a;
+
 }
 
 body {
@@ -64,10 +66,13 @@ body {
     filter: invert(100%);
 }
 
+.top-container {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
 .top-bar {
     display: grid;
     padding: 10px 30px;
-    background-color: pink;
     grid-template-columns: 2fr 1fr;
 }
 
@@ -83,6 +88,8 @@ body {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, auto);
+    justify-content: flex-end;
+    gap: 30px;
 }
 
 .top-bar input {
@@ -107,4 +114,51 @@ body {
 .top-bar .profile-name {
     font-weight: bold;
     white-space: nowrap;
+}
+
+.account-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px 40px;
+}
+
+.account-bar img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.account-bar .left-side {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.account-bar .left-side p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.account-bar .left-side p:nth-last-child(1) {
+    font-size: 1.5em;
+    white-space: nowrap;
+    margin-top: 0.3em;
+}
+
+.account-bar .right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Stop vertical stretch */
+    gap: 20px;
+}
+
+.account-bar button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--cyan-600);
+    color: white;
+    font-weight: bold;
 }
