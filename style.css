@@ -144,9 +144,8 @@ body {
 /* End styling banner */ 
 
 .buttons-container {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -154,6 +153,8 @@ body {
     background-color: var(--slate-700);
     color: white;
     border-radius: 25px;
-    padding: 10px;
+    width: 90px;
+    height: 40px;
     border: none;
 }
+
