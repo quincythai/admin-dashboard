@@ -9,14 +9,13 @@
 
 body {
     font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    height: 100%;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-
-    min-width: 100vw;
-    min-height: 100vh;
 }
 
 .sidebar {
@@ -57,7 +56,7 @@ body {
 /* Begin main */
 .main {
     display: grid;
-    grid-template-rows: 230px 5fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 
@@ -67,7 +66,7 @@ body {
     grid-template-rows: auto 1fr; /* Navbar horizontal | profile banner horizontal */
     grid-template-columns: 2fr 1fr; /* Search icon, input bar, and hi there | Right-side */
     padding: 10px 20px 20px 30px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .header .search-container { /* Instead of a navigation bar container on top, can use grid and header for both */
@@ -162,10 +161,10 @@ body {
 .content-container {
     display: grid;
     grid-template-columns: 70% 30%;
+    background-color: var(--gray-300);
 }
 
 .content-container .projects-container {
-    background-color: pink;
     padding: 0 20px 0 20px;
 }
 
@@ -186,6 +185,7 @@ body {
     flex-direction: column;
     border-left: 10px solid var(--cyan-600);
     border-radius: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* .content-container .projects-container .cards .card .color-block {
@@ -224,8 +224,9 @@ body {
 .content-container .announcements-trends-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: cyan;
-    padding: 0 20px 0 20px;
+    justify-content: center;
+    width: 80%;
+    padding-left: 10px;
 }
 
 .content-container .announcements-trends-container .announcements-container h4 {
@@ -238,6 +239,7 @@ body {
     background-color: white;
     border-radius: 14px;
     padding: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .announcements-card {
@@ -269,6 +271,7 @@ body {
     grid-template-rows: repeat(4, 1fr);
     border-radius: 14px;
     padding: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .trend-card {
