@@ -161,13 +161,12 @@ body {
 /* Begin main content */
 .content-container {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
 }
 
 .content-container .projects-container {
     background-color: pink;
     padding: 0 20px 0 20px;
-    height: 100%;
 }
 
 .content-container .projects-container h4 {
@@ -220,4 +219,76 @@ body {
 
 .content-container .projects-container .cards .card .text-block {
     padding: 20px 20px 0 20px;
+}
+
+.content-container .announcements-trends-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: cyan;
+    padding: 0 20px 0 20px;
+}
+
+.content-container .announcements-trends-container .announcements-container h4 {
+    font-size: 20px;
+}
+
+.content-container .announcements-trends-container .announcements-container .announcements-card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.announcements-card {
+    height: 75%;
+}
+
+.ann-card .ann-card-header {
+    font-weight: bold;
+}
+
+.ann-card .divider {
+    border: 1px solid var(--gray-300);
+    margin: 10px 0;
+}
+
+.ann-card .ann-card-text {
+    color: var(--neutral-500);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.trends-container h4 {
+    font-size: 20px;
+}
+
+.trends-card {
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.trend-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.trend-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.trend-card .username {
+    font-weight: bold;
+}
+
+.trend-card .punchline {
+    font-size: 14px;
+    color: var(--neutral-500);
 }
